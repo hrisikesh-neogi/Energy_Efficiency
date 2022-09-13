@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from typing import List
 
 # Declaring variables for setup functions
-PROJECT_NAME = "Energy-Efficiency"
+PROJECT_NAME = "energyefficiency"
 VERSION = "0.1.1"
 AUTHOR = "Hrisikesh Neogi"
 DESCRIPTION = "A Project which estimates heat and cool load"

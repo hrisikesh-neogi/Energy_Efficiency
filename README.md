@@ -1,8 +1,5 @@
-## Energy-Efficiency-ML-Project
+# Energy-Efficiency Project
 
-[Deployed URL](https://energy-efficiency-predictor.herokuapp.com/predict)
-
-### End-to-End Machine Learning Project;
 
 ### Problem Statement:
 The effect of eight input variables (relative compactness, surface area, wall area, roof
@@ -29,16 +26,16 @@ two responses (or outcomes, denoted by y1 and y2). The aim is to use the eight f
 each of the two responses - Heating Load & Cooling Load.
 
 #### Specifically:
-- X1 Relative Compactness
-- X2 Surface Area
-- X3 Wall Area
-- X4 Roof Area
-- X5 Overall Height
-- X6 Orientation
-- X7 Glazing Area
-- X8 Glazing Area Distribution
-- y1 Heating Load
-- y2 Cooling Load
+- Relative Compactness
+- Surface Area
+- Wall Area
+- Roof Area
+- Overall Height
+- Orientation
+- Glazing Area
+- Glazing Area Distribution
+- Heating Load
+- Cooling Load
 
 #### Software and account requirement
 
@@ -117,8 +114,4 @@ For train_test_split I have used StratifiedShuffleSplit to have the same kind of
 - saving custom model object
 - return model_trainer_artifact
 
-#### On the Deployed page to obtain the Predicted Heating Load, Cooling Load:
- - Once the Deployed page is displayed initially we need to obtain our Machine Learning Model by clicking on "Train Heating Load and Cooling Load Estimator".
- - Next, enter the Input feature Values provided in the "Heating Load & Cooling Load Estimation Form"
- - Next, click on the "Predict Heating Load & Cooling Load"
- - The Output Result is tabulated on your screen with all the features and respective values.
+
