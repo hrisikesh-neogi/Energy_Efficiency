@@ -1,0 +1,10 @@
+gunicorn
+pandas
+numpy
+Flask
+sklearn
+PyYAML
+evidently
+dill
+openpyxl
+-e .

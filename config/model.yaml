@@ -1,0 +1,66 @@
+grid_search:
+  class: GridSearchCV
+  module: sklearn.model_selection
+  params:
+   cv: 5
+   verbose: 2
+
+model_selection:
+  module_0: 
+    class: LinearRegression
+    module: sklearn.linear_model
+    params:
+      fit_intercept: True
+    search_param_grid:
+      fit_intercept:
+      - True
+
+  module_1: 
+    class: Lasso
+    module: sklearn.linear_model
+    params:
+      fit_intercept: True
+    search_param_grid:
+      alpha:
+      - 0.1
+      - 1
+      - 10
+
+  module_2: 
+    class: Ridge
+    module: sklearn.linear_model
+    params:
+      fit_intercept: True
+    search_param_grid:
+      alpha:
+      - 0.1
+      - 1
+      - 10
+
+  module_3: 
+    class: ElasticNet
+    module: sklearn.linear_model
+    params:
+      fit_intercept: True
+    search_param_grid:
+      alpha:
+      - 0.1
+      - 1
+      - 10
+      l1_ratio:
+      - 0.1
+      - 0.5
+
+  module_4:
+    class: RandomForestRegressor
+    module: sklearn.ensemble
+    params:
+      min_samples_leaf: 2
+    search_param_grid:
+      min_samples_leaf:
+      - 4
+      n_estimators:
+      - 100
+      max_depth:
+      - 2
+      - 4
